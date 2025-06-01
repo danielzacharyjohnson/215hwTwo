@@ -1,0 +1,79 @@
+@use "variables";
+
+.events {
+    height: 320px;
+    background-color: variables.$site-purple;
+    color: #fff;
+
+    .title {
+        width: 392px;
+        height: 90px;
+        border-bottom: solid 2px #fff;
+        margin: 40px;
+        padding-top: 40px;
+    }
+
+    .event-section {
+        margin: 40px;
+        height: 124px;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //background-color: bisque;
+
+        .event {
+            //background-color: chocolate;
+            width:220px;
+            height: 100%;
+            justify-content: space-between;
+            display: flex;
+            //align-items: center;
+
+            .event-date {
+                width: 60px;
+                height: 60px;
+                background-color: variables.$site-red;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                .number {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    margin-top: 15px;
+
+                }
+
+                .month {
+                    font-size: 12px;
+                    margin-top: -17px;
+                    
+                }
+
+            }
+
+            .event-text {
+                width: 140px;
+                //background-color: lightcoral;
+                justify-content: space-between;
+
+                .main-text {
+                    font-size: 15px;
+                    
+                }
+
+                .secondary-text {
+                    font-size: 13px;
+                    color: variables.$site-red;
+                    margin-top: -5px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
